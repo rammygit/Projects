@@ -9,7 +9,7 @@ import com.analysis.sql.util.InputPattern;
 
 /**
  * 
- * @author RXS1683
+ * @author ram
  *
  */
 public class SQLParser {
