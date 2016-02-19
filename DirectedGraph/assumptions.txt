@@ -1,0 +1,3 @@
+#assumptions for this program
+
+1. Input node are always one character length. (one alphabet = length == 1)
