@@ -1,0 +1,12 @@
+>> unzip the file containing the source code. 
+>> Attached all the input files inside the folder "inputFile".
+>> Below files are zipped along with the solution for running the application.
+"inputFile\\input.txt"
+"inputFile\\bad_input.txt"
+"inputFile\\noFileInput.txt"
+You are welcome to give your own input file and change the fileName in the TestApplication.java
+
+Build all classes and then Run TestApplication.java - (contains the main method). 
+
+
+

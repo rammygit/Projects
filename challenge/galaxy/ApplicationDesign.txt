@@ -1,0 +1,13 @@
+
+> All models or pojos are placed in com.galaxy.model package.
+> KnowledgeBase.java holds basic data structure to store and retrive the input data for application to run. 
+> RomanNumeral is an enum holding Numeral and its value (provided in the input)
+> All utility classes are placed in com.galaxy.util package.
+> InputProcessor.java - does the core computing for conversion and presents us with result we need.
+> InputProcessor.java - process() method does check for type of input data line.
+> segregated the type of input data as - numeral or source data, credit details type or question type.
+> if numeral , it goes into the KNowledgeBase -> HashMap <Key(glob),value(1)> , Value stored in HashMap is the value of the roman numeral directly.
+> Above said design allows intermidiate conversion while processing the question input type. 
+> Credit data type is stored in Metal pojo.
+> Question is sorted based on How much and How many. Iterating the details in steps of 2 to facilitate the calculation.
+
