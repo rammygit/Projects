@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 /**
  * 
- * @author RXS1683
+ * @author ram
  *
  */
 public class FileReader {
