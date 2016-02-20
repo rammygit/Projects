@@ -91,6 +91,8 @@ public class InputPattern {
 	
 	public static boolean isKeywordDecorator(){
 		
+		//Pattern pattern4 = Pattern.compile(mssqlQueryCommentPattern,Pattern.CASE_INSENSITIVE);
+		
 		return false;
 	}
 	
