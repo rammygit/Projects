@@ -11,9 +11,9 @@ public class InputPattern {
 	
 	
 	public static void main(String args[]) throws Exception {
-		String line = "USE [epostrx]";
+		String line = "USE [huuuhhu]";
 		System.out.println(isLineAComment(line));
-		line = "   USE [epostrx]";
+		line = "   USE [dfdfdd]";
 		System.out.println(isLineAComment(line));
 		line = "/**";
 		System.out.println(isLineAComment(line));
