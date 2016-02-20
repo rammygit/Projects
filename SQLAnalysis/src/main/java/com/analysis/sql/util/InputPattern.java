@@ -37,12 +37,17 @@ public class InputPattern {
 	/**
 	 * <space>atleast once and then a star followed by any character without line breaks.
 	 */
-	public static String commentMidPattern = "^(\\s+\\*+.*)$";
+	public static String commentMidPattern = "\\s*\\*+\\s*.*";
 	
 	/**
 	 * matches the end of comment started on new line.
 	 */
-	public static String commentEndPattern = "(^(\\s*\\*\\/)$)|(^(\\**\\/)$)";
+	public static String commentEndPattern = "(\\s*\\**\\/)|(\\**\\/)|(^\\*+\\/$)";
+	
+	/**
+	 * looks for -- comment patter and consider a space before the pattern
+	 */
+	public static String mssqlQueryCommentPattern = "\\s*--.*";
 	
 	
 	/**
@@ -54,26 +59,37 @@ public class InputPattern {
 	 */
 	public static boolean isLineAComment(String line){
 		
-		System.out.println(line);
 		
 		
-		Pattern pattern = Pattern.compile(commentStartPattern);
+		Pattern pattern = Pattern.compile(commentStartPattern,Pattern.CASE_INSENSITIVE);
 		if(pattern.matcher(line).matches()){
-			System.out.println("matching start comment pattern");
+			//System.out.println("matching start comment pattern");
 			return true;
 		}
 		
-		Pattern pattern2 = Pattern.compile(commentMidPattern);
+		Pattern pattern2 = Pattern.compile(commentMidPattern,Pattern.CASE_INSENSITIVE);
 		if(pattern2.matcher(line).matches()) {
-			System.out.println("matching commentMidPattern pattern");
+			//System.out.println("matching commentMidPattern pattern");
 			return true;
 		}
 		
-		Pattern pattern3 = Pattern.compile(commentEndPattern);
+		Pattern pattern3 = Pattern.compile(commentEndPattern,Pattern.CASE_INSENSITIVE);
 		if( pattern3.matcher(line).matches()){
-			System.out.println("matching commentEndPattern pattern");
+			//System.out.println("matching commentEndPattern pattern");
 			return true;
 		}
+		
+		Pattern pattern4 = Pattern.compile(mssqlQueryCommentPattern,Pattern.CASE_INSENSITIVE);
+		if( pattern4.matcher(line).matches()){
+			//System.out.println("matching commentEndPattern pattern");
+			return true;
+		}
+		
+		return false;
+	}
+	
+	
+	public static boolean isKeywordDecorator(){
 		
 		return false;
 	}
