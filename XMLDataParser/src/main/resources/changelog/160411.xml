@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+	<!-- Pre Deployment Script -->
+	<changeSet author="XXyyy" id="quarterly20163"
+		runOnChange="true">
+		<sqlFile endDelimiter="GO"
+			path="changelog/xxx.sql" />
+	</changeSet>
+	<changeSet author="yyyzzz" id="quarterly20162"
+		runOnChange="true">
+		<sqlFile endDelimiter="GO"
+			path="changelog/yyyy.sql" />
+	</changeSet>
+	<changeSet author="nnnwww" id="quarterly20161"
+		runOnChange="true">
+		<sqlFile endDelimiter="GO"
+			path="changelog/uuuuu.sql" />
+	</changeSet>
+	<changeSet author="eeewwww" id="quarterly2016"
+		runOnChange="true">
+		<sqlFile endDelimiter="GO"
+			path="changelog/fffff.sql" />
+	</changeSet>
+
+	<!-- Build Version -->
+
+	<!-- If any Post-Deployment Script that should be deployed post server startup -->
+
+</databaseChangeLog> 
