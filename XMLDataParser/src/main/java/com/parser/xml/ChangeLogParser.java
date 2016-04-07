@@ -54,7 +54,7 @@ public class ChangeLogParser {
 			try {
 				parseChildXMLs(fileName);
 			} catch (Exception e) {
-				e.printStackTrace();
+				//TODO: throw custom exception.
 			}
 		});
 	}
