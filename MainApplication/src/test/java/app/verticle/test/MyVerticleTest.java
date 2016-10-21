@@ -25,7 +25,9 @@ public class MyVerticleTest {
 	@Before
 	public void setup(TestContext context){
 		VertxOptions vertxOptions = new VertxOptions();
+		/* TODO: why this has to be set ? */
 	    vertxOptions.setMaxWorkerExecuteTime(2147483647); // maximum number for 2^31 - 1
+	    vertxOptions.setMaxEventLoopExecuteTime(Long.MAX_VALUE);
 		vertx = Vertx.vertx(vertxOptions);
 		vertx.deployVerticle(MyFirstVerticle.class.getName(),context.asyncAssertSuccess());
 	}
