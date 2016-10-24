@@ -11,7 +11,7 @@ public class Whisky {
 
 	private static final AtomicInteger COUNTER = new AtomicInteger();
 
-	private final int id;
+	private int id;
 
 	private String name;
 
@@ -21,6 +21,11 @@ public class Whisky {
 		this.id = COUNTER.getAndIncrement();
 		this.name = name;
 		this.origin = origin;
+	}
+	
+	public Whisky(int id,String name,String origin){
+		this(name,origin);
+		this.id = id;
 	}
 
 	public Whisky() {

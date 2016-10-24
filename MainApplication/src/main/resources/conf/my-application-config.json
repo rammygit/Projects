@@ -1,3 +1,5 @@
 {
-  "http.port" : 8083
+  "http.port" : 8082,
+  "url": "jdbc:sqlite:/Users/ramkumarsundarajan/Downloads/collection.db",  
+  "driver_class": "org.sqlite.JDBC"
 }
