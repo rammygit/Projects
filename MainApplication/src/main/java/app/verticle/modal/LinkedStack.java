@@ -1,7 +1,7 @@
 package app.verticle.modal;
 
 /**
- * 
+ * singly linkedlist implementation 
  * @author ramkumarsundarajan
  *
  */
