@@ -42,7 +42,7 @@ public class MyFirstVerticle extends AbstractVerticle{
 		startBackend(
 				(result) -> createSomeData(result,(nothing) -> startWebApp((http) -> completeStartup(http, future)), future), future);
 
-		startBackend((result) -> createSomeData(result, (nothing)-> startWebApp((http) -> completeStartup(http, future)), future), future);
+		//startBackend((result) -> createSomeData(result, (nothing)-> startWebApp((http) -> completeStartup(http, future)), future), future);
 
 		
 	}
