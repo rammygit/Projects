@@ -28,6 +28,7 @@ public class LinkedStack implements Stack<String>{
 
 	@Override
 	public String pop() {
+		
 		Node node = top;
 		top = top.next;
 		return node.element;
