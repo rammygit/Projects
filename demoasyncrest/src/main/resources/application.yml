@@ -1,0 +1,5 @@
+kafka:
+  bootstrap-servers: localhost:9092
+  scan-send-topic: my-scan-topic
+  scan-receive-topic: my-scan-topic-receive
+
